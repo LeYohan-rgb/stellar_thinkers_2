@@ -1,0 +1,19 @@
+.mira{
+    font-size: 70px;
+    text-align: center;
+    background-color: blue;
+    color: wheat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html, body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHDO8CJHlDTtcC49FJngeN9QHXd5KxlwpkdA&s');
+    background-repeat: no-repe; /* Evita que se repita */
+    background-size: cover;       /* Cubre toda la pantalla */
+    background-position: center;  /* Centra la imagen */
+    margin: 0;
+    height: 100%;
+  }
+
+  .jim{
+    width: 100%;
+  }

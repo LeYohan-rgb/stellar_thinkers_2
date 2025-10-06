@@ -1,0 +1,314 @@
+.bars1 {
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: space-evenly;
+  gap: 20px;
+}
+
+.bars2 {
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: space-evenly;
+  gap: 20px;
+}
+
+.bars0 {
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: space-evenly;
+  gap: 20px;
+}
+
+.trash_bar_background {
+  width: 50%;
+  height: 20%;
+  background-color: white;
+}
+
+.bar_background {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  border-radius: 50px;
+  text-align: center;
+  width: 70%;
+  height: 20%;
+  background-color: white;
+}
+
+.bar_submit_button {
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  width: 70%;
+  height: 20%;
+  font-size: 20px;
+  background-color: #8084b3;
+}
+
+
+.label_button {
+  padding: 5px 5px 5px 5px;
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+}
+
+.label_category {
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  background: linear-gradient(to bottom, #373d78, transparent);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.pop_image {
+  width: 100%;
+}
+
+#container { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* align horizontally to the left */
+  align-items: center;  
+  background: linear-gradient(to right, rgb(2, 18, 36), rgba(0, 128, 255, 0));
+  width: 21%;
+  
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#big{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aqua;
+  background-image: url(images/misc/criterion_b.jpg);
+  height:100vh;
+}
+p{
+  font-size: 1;
+}
+#heading {
+  font-size: 600;
+}
+
+#left {
+  width: 80%;
+  height: 110%;
+  background-color: rgb(123, 123, 123);
+  background-image: url("images/misc/background6.png");
+  background-size: 100%;        /* fills the div without distortion */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+    align-content: flex-start
+}
+
+#resetBtn {
+  color: white;
+  background-color: #646787;
+  text-align: center;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.weight_icon {
+  width: 35px;
+  position: absolute;
+  top: 80px;
+  right: 880px;
+}
+
+.science_icon {
+  width: 35px;
+  position: absolute;
+  top: 83px;
+  right: 230px;
+}
+
+.comfort_icon {
+  width: 35px;
+  position: absolute;
+  top: 85px;
+  right: 550px;
+}
+
+.health_icon {
+  width: 35px;
+  position: absolute;
+  top: 163px;
+  right: 550px;
+}
+
+.fitness_icon {
+  width: 35px;
+  position: absolute;
+  top: 160px;
+  right: 880px;
+}
+
+#right{
+  width: 20%;
+  height: 100vh;
+  background-color: brown;
+  overflow: auto;
+  background-image: url("images/misc/item_menu_bg.webp");
+  background-size: cover;
+  background-position: center;
+}
+.space{
+  width: 5%;
+}
+.small.drop{
+  height: 25%;
+  width: 100/6%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.big.drop{
+  width: 30%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#dividerline{
+  width: 100%;
+  height: 10px;
+  margin: 2px;
+}
+.drop {
+  width: 150px;
+  height: 150px;
+  border: 2px dashed gray;
+  display: flex;
+  margin: auto;
+  margin: 6px;
+  transition: border-color 0.2s, background 0.2s;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop.highlight {
+  border-color: rgb(0, 243, 0);
+  background-color: #d9fc8c;
+}
+
+.hygiene_images {
+  display: none;
+}
+
+.kitchen_images {
+  display: none;
+}
+
+.lab_images {
+  display: none;
+}
+
+.exercise_images {
+  display: none;
+}
+
+.oxygen_images {
+  display: none;
+}
+
+.room_images {
+  display: none;
+}
+
+.reunion_images {
+  display: none;
+}
+
+
+.comfort_bar_background {
+  background: linear-gradient(
+    to right,
+    orange 0%,
+    orange 0%,   /* rojo ocupa 70% */
+    white 0%, /* verde empieza aquí */
+    white 100%
+  );
+}
+
+.hygiene_bar_background {
+  background: linear-gradient(
+    to right,
+    cyan 0%,
+    cyan 0%,   /* rojo ocupa 70% */
+    white 0%, /* verde empieza aquí */
+    white 100%
+  );
+}
+
+.scientific_bar_background {
+  background: linear-gradient(
+    to right,
+    blue 0%,
+    blue 0%,   /* rojo ocupa 70% */
+    white 0%, /* verde empieza aquí */
+    white 100%
+  );
+}
+
+.total_bar_background {
+  background: linear-gradient(
+    to right,
+    green 0%,
+    green 0%,   /* rojo ocupa 70% */
+    white 0%, /* verde empieza aquí */
+    white 100%
+  );
+}
+
+
+
+
+
+
+img {
+
+  height: auto;
+  position: relative;
+  cursor: pointer;
+}
+
+/* description box (created dynamically) */
+.desc-box {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9); /* ✅ less opacity */
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  transform: translate(-50%, -80%);
+  left: 50%;
+  top: 0;
+  border-radius: 10px;
+  
+  white-space: normal; /* ✅ allow text wrapping */
+  max-width: 400px;    /* optional: limit width before wrapping */
+  word-wrap: break-word; /* wrap long words if needed */
+}

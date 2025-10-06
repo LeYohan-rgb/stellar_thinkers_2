@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar thinkers</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <img src="icons/science.png" class="science_icon">
+  <img src="icons/comfort.png" class="comfort_icon">
+  <img src="icons/health.png" class="health_icon">
+  <img src="icons/weight.png" class="weight_icon">
+  <img src="icons/fitness.png" class="fitness_icon">
+    <main>
+      <div id="big">
+
+
+        <div id="container">
+            <h1 id="heading">
+                <img src="pop.png" class="pop_image">
+            </h1>
+            <button id="resetBtn"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RESET</b></button>
+        </div>
+
+        <div class="bars0">
+          <button class="bar_background trash_bar_background" id="weight_bar_background">Weight</button>
+          <button class="bar_background sports_bar_background" id="sports_bar_background">Fitness</button>
+        </div>
+        <div class="bars1">
+          <button class="bar_background comfort_bar_background" id="comfort_bar_background">Comfort</button>
+          <button class="bar_background hygiene_bar_background" id="hygiene_bar_background">Health</button>
+        </div>
+        <div class="bars2">
+          <button class="bar_background scientific_bar_background" id="scientific_bar_background">Science</button>
+          <button class="bar_submit_button" id="submit_btn"><b>SUBMIT</b></button>
+        </div>
+
+        <div id="left">
+           <div id="dividerline"></div>
+           <div class="space"></div>
+                     <div class="space"></div>
+          <div ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="div7" class="big drop"></div>
+          
+          <div ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="div1" class="small drop"></div>
+          <div ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="div8" class="big drop"></div>
+     
+          <div id="dividerline"></div>
+          
+         <div id="dividerline"></div>
+               <div id="dividerline"></div>
+          <div class="space"></div>
+            <div class="space"></div>
+          <div class="space"></div>
+          <div ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="div2" class="small drop"></div>
+          <div ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="div3" class="small drop"></div>
+          <div ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="div4" class="small drop"></div>
+          <div ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="div5" class="small drop"></div>
+          <div id="dividerline"></div>
+             <div id="dividerline"></div>
+                <div id="dividerline"></div>
+                   <div id="dividerline"></div>
+
+          <div class="space"></div>
+                    <div class="space"></div>
+          <div ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="div6" class="big drop"></div>
+          <div ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="div9" class="small drop"></div>
+          <div ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" id="div10" class="big drop"></div>
+          <div id="dividerline"></div>
+          
+         
+          
+        </div>
+        <div id="right">
+          <div class="label_category">
+            <button class="label_button" id="hygiene_button">HYGIENE</button>
+            <button class="label_button" id="kitchen_button">KITCHEN</button>
+            <button class="label_button" id="exercise_button">EXERCISE</button>
+            <button class="label_button" id="lab_button">LABORATORY</button>
+            <button class="label_button" id="oxygen_button">OXYGEN</button>
+            <button class="label_button" id="room_button">REST</button>
+            <button class="label_button" id="reunion_button">COMMODITIES</button>
+          </div>
+
+          <div class="kitchen_images" id="kitchen_images">
+            <img src="images/KITCHEN/beverage_bags.png" width="80px" draggable="true" id="beverage_bags" class="small" data-desc="--Beverage Bags-- Sealed bags with a straw to drink liquids from in microgravity." ondragstart="dragstartHandler(event)" >
+            <img src="images/KITCHEN/eating_utensils.png" width="80px" draggable="true" id="eating_utensils" class="small" data-desc='--Eating Utensils-- Magnetic forks, knifes and spoons that adhere to the eating tray.' ondragstart="dragstartHandler(event)" >
+            <img src="images/KITCHEN/food_packs.png" width="80px" draggable="true" id="food_packs" data-desc='--Food Packs-- Foods packaged and sealed, designed to last long periods of time and maintain nutritional value.' class="small" ondragstart="dragstartHandler(event)" >
+            <img src="images/KITCHEN/food_warmer.png" width="80px" draggable="true" id="food_warmer" data-desc='--Food Warmer-- Electronic device that warms up sealed rations for astronautsn without fire.' class="small" ondragstart="dragstartHandler(event)" >
+            <img src="images/KITCHEN/water_dispenser.png" width="80px" draggable="true" id="water_dispenser" class="small" data-desc="--Water Dispenser-- Supplies cold or warm water for drinking and preparing foods." ondragstart="dragstartHandler(event)" >
+          </div>
+
+
+          <div class="lab_images" id="lab_images">
+            <img src="images/LABORATORY/glove_box.png" width="80px" draggable="true" id="glove_box" data-desc='--Glove Box-- A closed space with integrated gloves to manipulate sensible materials.' class="small" ondragstart="dragstartHandler(event)" >
+            <img src="images/LABORATORY/research_workstation.png" width="120px" draggable="true" id="research_workstation" data-desc='--Research Workstation-- Table with instruments for analysis and a screen with data.' class="big" ondragstart="dragstartHandler(event)" >
+            <img src="images/LABORATORY/sample_storage_unit.png" width="120px" draggable="true" id="sample_storage_unit" data-desc='--Sample Storage Unit-- Sealed container to store biological or chemical samples.' class="big" ondragstart="dragstartHandler(event)" >
+          </div>
+
+          <div class="exercise_images" id="exercise_images">
+            <img src="images/EJERCICIO/ARED.png" width="120px" draggable="true" id="ARED" class="big" data-desc="--Advanced Resistive Exercise Device-- Allows for heavy exercise in space.
+" ondragstart="dragstartHandler(event)" >
+            <img src="images/EJERCICIO/cycle_ergometer.png" width="80px" draggable="true" id="cycle_ergometer" class="small" data-desc='--Cycle Ergometer-- Static bike without a seat.' ondragstart="dragstartHandler(event)" >
+            <img src="images/EJERCICIO/Treadmill.png" width="120px" draggable="true" id="basic_treadmill" class="big" data-desc="--Treadmill-- Walking machine designed to function without gravity
+" ondragstart="dragstartHandler(event)" >
+          </div>
+
+          <div class="oxygen_images" id="oxygen_images">
+            <img src="images/OXYGEN/CO2_removal_assembly.png" width="80px" draggable="true" id="CO2_removal_assembly" data-desc='--CO2 Removal Assembly-- System that absorbs CO₂ in the air.' class="small" ondragstart="dragstartHandler(event)" >
+            <img src="images/OXYGEN/oxygen_generation_system.png" width="120px" draggable="true" id="oxygen_generation_system" data-desc='--Oxygen Generation System-- Equipment that produces oxygen by dividing water molecules with electrolysis.' class="big" ondragstart="dragstartHandler(event)" >
+            <img src="images/OXYGEN/oxygen_storage_tank.png" width="120px" draggable="true" id="oxygen_storage_tank" class="big" data-desc="--Oxygen Storage Tank-- Pressurized tank that holds oxygen generated or in reserve." ondragstart="dragstartHandler(event)" >
+          </div>
+
+          <div class="room_images" id="room_images">
+            <img src="images/DESCANSO/dormitorio_espacial.png" width="120px" draggable="true" id="dormitorio_espacial" class="big" data-desc="--Big Space Bed-- Big sleeping bed for an individual." ondragstart="dragstartHandler(event)" >
+            <img src="images/DESCANSO/temperature_regulator.png" width="80px" draggable="true" id="temperature_regulator" data-desc='--Temperature Regulator-- System that controls the temperature of the dorm.' class="small" ondragstart="dragstartHandler(event)" >
+            <img src="images/DESCANSO/ventilation_system.png" width="80px" draggable="true" id="ventilation_system" class="small" data-desc='--Ventilation System-- Circulates fresh air in the cabin.' ondragstart="dragstartHandler(event)" >
+          </div>
+
+          <div class="reunion_images" id="reunion_images">
+            <img src="images/COMODIDAD/locker_personal.png" width="120px" draggable="true" id="personal_locker" class="big" data-desc='--Personal Locker-- Compartment for individuals to store their personal objects.' ondragstart="dragstartHandler(event)" >
+            <img src="images/COMODIDAD/consola_de_comunicacion.png" width="80px" draggable="true" id="consola_de_comunicacion" data-desc='--Comunication Console-- A panel with micrófonos, tactile screens and controls to send and receive information.' class="small" ondragstart="dragstartHandler(event)" >
+            <img src="images/COMODIDAD/panel_de_luz.png" width="80px" draggable="true" id="panel_de_luz" class="small" data-desc='--Solar Panel-- System that adjusts light and sound to the biological rhythm of the user controller by AI.' ondragstart="dragstartHandler(event)" >
+          </div>
+
+          <div class="hygiene_images" id="hygiene_images">
+              <img src="images/HYGIENE/health_monitoring_station.png" width="80px" draggable="true" id="health_monitoring_system" data-desc="--Health Monitoring Station-- A station equiped with biometric sensors to measure cardiac rhythm, oxígen in the blood and body mass."  class="small" ondragstart="dragstartHandler(event)" >
+              <img src="images/HYGIENE/control_de_excremento.png" width="120px" draggable="true" id="big_toilet" class="big" data-desc="--Waste Management System-- Eliminates human waste in microgravity." ondragstart="dragstartHandler(event)" >
+              <img src="images/HYGIENE/dental_hygiene_kit.png" width="80px" draggable="true" id="dental_hygiene_kit" class="small" data-desc="--Dental Hygiene Kit-- Includes toothbrush, digestible pasta and mouthwash without spitting." ondragstart="dragstartHandler(event)" >
+              <img src="images/HYGIENE/trash_can.png" width="80px" draggable="true" id="trash_can" class="small" data-desc='--Trash Can-- Sealed container for non-recycable resources.' ondragstart="dragstartHandler(event)" >
+          </div>
+
+        </div>
+        <!-- DIV RIGHT ENDS-->
+        </div>
+      </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
